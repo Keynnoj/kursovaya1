@@ -1,0 +1,25 @@
+﻿<Page x:Class="kursovaya.Registration"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:kursovaya"
+      mc:Ignorable="d" 
+      d:DesignHeight="1080" d:DesignWidth="1920"
+      Title="Registration">
+
+    <Grid Background="#FF9B9B9B">
+        <Frame Name="Registration1" Content="" HorizontalAlignment="Left" Height="1060" Margin="10,10,0,0" VerticalAlignment="Top" Width="1900"/>
+        <TextBlock HorizontalAlignment="Center" Margin="822,178,766,0" TextWrapping="Wrap" Text="РЕГИСТРАЦИЯ" VerticalAlignment="Top" Height="72" Width="332" FontSize="48"/>
+        <TextBox Name="Code_user" HorizontalAlignment="Left" Height="47" Margin="628,298,0,0" TextWrapping="Wrap" Text="Code user" VerticalAlignment="Top" Width="718"/>
+        <TextBox Name="Name" HorizontalAlignment="Left" Height="47" Margin="628,380,0,0" TextWrapping="Wrap" Text="Имя" VerticalAlignment="Top" Width="718"/>
+        <TextBox Name="Surname" HorizontalAlignment="Left" Height="47" Margin="628,468,0,0" TextWrapping="Wrap" Text="Фамилия" VerticalAlignment="Top" Width="718"/>
+        <TextBox Name="Patronymic" HorizontalAlignment="Left" Height="47" Margin="628,554,0,0" TextWrapping="Wrap" Text="Отчество" VerticalAlignment="Top" Width="718"/>
+        <TextBox Name="Phone" HorizontalAlignment="Left" Height="47" Margin="628,636,0,0" TextWrapping="Wrap" Text="Телефон" VerticalAlignment="Top" Width="718"/>
+        <TextBox Name="City" HorizontalAlignment="Left" Height="47" Margin="628,724,0,0" TextWrapping="Wrap" Text="Город" VerticalAlignment="Top" Width="718"/>
+        <TextBox Name="Adres" HorizontalAlignment="Left" Height="47" Margin="628,795,0,0" TextWrapping="Wrap" Text="Улица" VerticalAlignment="Top" Width="718"/>
+        <TextBox Name="Login" HorizontalAlignment="Left" Height="47" Margin="628,877,0,0" TextWrapping="Wrap" Text="Логин" VerticalAlignment="Top" Width="718"/>
+        <TextBox Name="Password" HorizontalAlignment="Left" Height="47" Margin="628,965,0,0" TextWrapping="Wrap" Text="Пароль" VerticalAlignment="Top" Width="718"/>
+
+    </Grid>
+</Page>

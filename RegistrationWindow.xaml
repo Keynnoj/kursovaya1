@@ -1,0 +1,42 @@
+﻿<Window x:Class="kursovaya.RegistrationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:kursovaya"
+        mc:Ignorable="d"
+          WindowStyle="None"
+		WindowState="Maximized"
+		WindowStartupLocation="CenterScreen"
+        Title="MainWindow" Height="1080" Width="1920">
+    <Grid>
+        <Frame x:Name="Registration" Content="" HorizontalAlignment="Left" Height="1052" Margin="10,10,0,0" VerticalAlignment="Top" Width="1892" Background="#FFAAAAAA"/>
+        <TextBlock HorizontalAlignment="Center" Margin="822,178,766,0" TextWrapping="Wrap" Text="РЕГИСТРАЦИЯ" VerticalAlignment="Top" Height="72" Width="332" FontSize="48"/>
+        <TextBlock x:Name="Code_user" HorizontalAlignment="Left" Height="46" Margin="628,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="718"/>
+        <TextBox x:Name="RegName" HorizontalAlignment="Left" Height="47" Margin="628,299,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="718"/>
+        <TextBox x:Name="RegSurname" HorizontalAlignment="Left" Height="47" Margin="628,383,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="718"/>
+        <TextBox x:Name="RegPatronymic" HorizontalAlignment="Left" Height="47" Margin="628,467,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="718"/>
+        <TextBox x:Name="RegPhone" HorizontalAlignment="Left" Height="47" Margin="628,549,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="718"/>
+        <TextBox x:Name="RegCity" HorizontalAlignment="Left" Height="47" Margin="628,637,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="718"/>
+        <TextBox x:Name="RegAdres" HorizontalAlignment="Left" Height="47" Margin="628,708,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="718"/>
+        <TextBox x:Name="RegLogin" HorizontalAlignment="Left" Height="47" Margin="628,790,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="718" TextChanged="Login_TextChanged"/>
+        <TextBox x:Name="RegPassword" HorizontalAlignment="Left" Height="47" Margin="628,866,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="718"/>
+        <Button x:Name="Reg" Content="Зарегистрироваться" HorizontalAlignment="Left" Margin="1448,965,0,0" VerticalAlignment="Top" Width="129" Click="Reg_Click" Height="47"/>
+        <TextBlock x:Name="Error" HorizontalAlignment="Left" Margin="628,918,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="124" Width="718"/>
+        <TextBlock x:Name="Suc" HorizontalAlignment="Left" Margin="920,255,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Width="123"/>
+        <Image HorizontalAlignment="Left" Height="36" Margin="1844,10,0,0" VerticalAlignment="Top" Width="58" Source="назад.png" Cursor="Hand" MouseLeftButtonDown="Back_MouseLeftButtonDown"/>
+        <TextBlock HorizontalAlignment="Left" Margin="572,313,0,0" TextWrapping="Wrap" Text="Имя" VerticalAlignment="Top" Width="27" Height="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="572,482,0,0" TextWrapping="Wrap" Text="Отчество" VerticalAlignment="Top" Width="51" Height="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="572,395,0,0" TextWrapping="Wrap" Text="Фамилия" VerticalAlignment="Top" Width="51" Height="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="572,563,0,0" TextWrapping="Wrap" Text="Телефон" VerticalAlignment="Top" Width="51" Height="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="572,653,0,0" TextWrapping="Wrap" Text="Город" VerticalAlignment="Top" Width="51" Height="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="572,723,0,0" TextWrapping="Wrap" Text="Улица" VerticalAlignment="Top" Width="51" Height="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="572,804,0,0" TextWrapping="Wrap" Text="Логин" VerticalAlignment="Top" Width="51" Height="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="572,893,0,0" TextWrapping="Wrap" Text="Пароль" VerticalAlignment="Top" Width="51" Height="20"/>
+
+        <Frame NavigationUIVisibility="Hidden"  Name="SuccessfulFrame" Margin="504,299,452,159"/>
+
+        <!-- <Frame NavigationUIVisibility="Hidden" x:Name="SuccessfulFrame"  HorizontalAlignment="Left" Height="140" Margin="714,48,0,0" VerticalAlignment="Top" Width="514"/>
+-->
+    </Grid>
+</Window>
